@@ -1,11 +1,12 @@
 import React from "react";
-import css from "./Profile.module.css";
+import "./Profile.style.css";
 
 export default function Profile(props) {
   const { username, tag, location, avatar, stats } = props;
 
   return (
-    <div className={css.profile}>
+    // <div className={css.profile}>
+    <div className="profile">
       <div className="description">
         <img
           src={`${avatar}`}
@@ -17,18 +18,18 @@ export default function Profile(props) {
         <p className="tag">{tag}</p>
         <p className="location">{location}</p>
       </div>
-      <ul className={css.stats}>
-        <li className={css.item}>
+      <ul className="stats">
+        <li className="item">
           <span className="label">Followers</span>
           <br />
           <span className="quantity">{stats.followers}</span>
         </li>
-        <li className={css.item}>
+        <li className="item">
           <span className="label">Views</span>
           <br />
           <span className="quantity">{stats.views}</span>
         </li>
-        <li className={css.item}>
+        <li className="item">
           <span className="label">Likes</span> <br />
           <span className="quantity">{stats.likes}</span>
         </li>

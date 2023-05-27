@@ -1,0 +1,48 @@
+.profile {
+  display: block;
+  text-align: center;
+  margin-top: 100px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  width: 250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 20px;
+  background-color: rgb(241, 241, 241);
+}
+.stats {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: auto;
+  padding-left: 0;
+}
+.item {
+  display: block;
+  width: 250px;
+  font-size: 13px;
+  text-align: center;
+  border: solid 1px rgb(171, 171, 171);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+  background-color: lightgray;
+  padding: 10px;
+}
+.label {
+  display: block;
+}
+
+.location,
+.tag,
+.label {
+  color: gray;
+}
+.quantity,
+.name {
+  font-weight: 700;
+}
+
+img {
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+    rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
