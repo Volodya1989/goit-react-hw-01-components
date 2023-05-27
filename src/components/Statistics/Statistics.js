@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Statistics.style.css";
 const Statistics = ({ stats, title }) => {
   const getRandomHexColor = () => {
     return `#${Math.floor(Math.random() * 16777215)
@@ -16,7 +16,11 @@ const Statistics = ({ stats, title }) => {
       <ul className="stat-list">
         {stats.map(({ label, percentage, id }) => {
           return (
-            <li key={id} className="item">
+            <li
+              key={id}
+              className="item-statistics"
+              style={{ backgroundColor: getRandomHexColor() }}
+            >
               <span className="label">{label}</span> <br />
               <span className="percentage">{percentage}%</span>
             </li>
