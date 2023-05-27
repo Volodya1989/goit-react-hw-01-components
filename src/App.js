@@ -1,4 +1,3 @@
-import "./App.css";
 import user from "./components/data/user.json";
 import Profile from "./components/Profile";
 
