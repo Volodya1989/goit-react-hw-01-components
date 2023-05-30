@@ -6,9 +6,7 @@ const Statistics = ({ stats, title }) => {
       .toString(16)
       .padStart(6, 0)}`;
   };
-  console.log(getRandomHexColor());
-  console.log(stats);
-  console.log(`title ${title}`);
+
   return (
     <section className="statistics">
       <h2 className="title">{title ? title : "Upload stats1"}</h2>
