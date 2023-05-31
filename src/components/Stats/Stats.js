@@ -1,5 +1,7 @@
 import React from "react";
 import "./Stats.style.css";
+import PropTypes from "prop-types";
+
 export default function Stats({ stats }) {
   const { followers, views, likes } = stats;
 
@@ -24,3 +26,7 @@ export default function Stats({ stats }) {
     </>
   );
 }
+
+Stats.propTypes = {
+  stats: PropTypes.objectOf(PropTypes.number.isRequired),
+};

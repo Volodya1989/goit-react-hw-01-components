@@ -1,4 +1,6 @@
 import React from "react";
+import PropTypes from "prop-types";
+
 import "./Statistics.style.css";
 const Statistics = ({ stats, title }) => {
   const getRandomHexColor = () => {
@@ -29,3 +31,15 @@ const Statistics = ({ stats, title }) => {
 };
 
 export default Statistics;
+
+Statistics.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.shape({
+      label: PropTypes.string.isRequired,
+      id: PropTypes.number.isRequired,
+      percentage: PropTypes.number.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+    }).isRequired
+  ),
+  title: PropTypes.string,
+};
