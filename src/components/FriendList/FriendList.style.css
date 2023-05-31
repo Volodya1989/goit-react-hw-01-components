@@ -24,6 +24,13 @@
   padding-left: 30px;
   background-color: white;
   width: 270px;
+  transition: transform 0.4s;
+}
+
+.friend-item:hover {
+  transition: transform 0.4s;
+  transform: scale(1.05);
+  cursor: pointer;
 }
 
 .friend-list {

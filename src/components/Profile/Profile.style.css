@@ -7,6 +7,14 @@
   margin-right: auto;
   padding-top: 20px;
   background-color: rgb(241, 241, 241);
+    transition: transform 0.4s;
+
+}
+
+.profile:hover {
+  transition: transform 0.4s;
+  transform: scale(1.05);
+  cursor: pointer;
 }
 .stats {
   display: flex;
