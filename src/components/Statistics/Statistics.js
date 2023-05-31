@@ -9,8 +9,7 @@ const Statistics = ({ stats, title }) => {
 
   return (
     <section className="statistics">
-      <h2 className="title">{title ? title : "Upload stats1"}</h2>
-
+      {title && <h2 className="title">{title}</h2>}
       <ul className="stat-list">
         {stats.map(({ label, percentage, id }) => {
           return (

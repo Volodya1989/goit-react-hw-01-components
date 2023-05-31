@@ -2,10 +2,9 @@ import React from "react";
 import "./TransactionHistory.style.css";
 
 const TransactionHistory = ({ items }) => {
-  console.log(items);
   return (
     <>
-      <table class="transaction-history">
+      <table className="transaction-history">
         <thead className="header">
           <tr>
             <th>Type</th>
