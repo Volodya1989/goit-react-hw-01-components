@@ -13,7 +13,7 @@ const FriendList = ({ friends }) => {
                 className={`status ${isOnline ? "online" : "offline"}`}
               ></span>
               <img
-                className="avatar"
+                className="avatar friend-avatar"
                 src={`${avatar}`}
                 alt="User avatar"
                 width="48"
