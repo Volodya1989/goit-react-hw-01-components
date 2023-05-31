@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <>
+    <li className="item friend-item">
       <span className={`status ${isOnline ? "online" : "offline"}`}></span>
       <img
         className="avatar friend-avatar"
@@ -12,7 +12,7 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
         width="48"
       />
       <p className="name">{name}</p>
-    </>
+    </li>
   );
 };
 FriendListItem.propTypes = {
