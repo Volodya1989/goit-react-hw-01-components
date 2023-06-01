@@ -1,4 +1,3 @@
-import React from "react";
 import FriendListItem from "../FriendListItem";
 import PropTypes from "prop-types";
 
