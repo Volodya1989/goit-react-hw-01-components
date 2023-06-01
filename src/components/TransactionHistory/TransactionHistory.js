@@ -32,9 +32,9 @@ const TransactionHistory = ({ items }) => {
 export default TransactionHistory;
 
 TransactionHistory.propTypes = {
-  friends: PropTypes.arrayOf(
+  items: PropTypes.arrayOf(
     PropTypes.shape({
-      amount: PropTypes.number.isRequired,
+      amount: PropTypes.string.isRequired,
       id: PropTypes.string.isRequired,
       type: PropTypes.string.isRequired,
       currency: PropTypes.string.isRequired,

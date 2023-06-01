@@ -33,12 +33,11 @@ const Statistics = ({ stats, title }) => {
 export default Statistics;
 
 Statistics.propTypes = {
-  friends: PropTypes.arrayOf(
+  stats: PropTypes.arrayOf(
     PropTypes.shape({
       label: PropTypes.string.isRequired,
-      id: PropTypes.number.isRequired,
+      id: PropTypes.string.isRequired,
       percentage: PropTypes.number.isRequired,
-      isOnline: PropTypes.bool.isRequired,
     }).isRequired
   ),
   title: PropTypes.string,

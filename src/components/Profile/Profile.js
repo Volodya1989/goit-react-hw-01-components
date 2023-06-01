@@ -14,7 +14,7 @@ export default function Profile({ username, tag, location, avatar, stats }) {
           width="100px"
         />
         <p className="name">{username}</p>
-        <p className="tag">{tag}</p>
+        <p className="tag">@{tag}</p>
         <p className="location">{location}</p>
       </div>
       <Stats stats={stats} />
@@ -27,5 +27,9 @@ Profile.propTypes = {
   tag: PropTypes.string.isRequired,
   location: PropTypes.string.isRequired,
   avatar: PropTypes.string.isRequired,
-  stats: PropTypes.objectOf(PropTypes.number.isRequired),
+  stats: PropTypes.shape({
+    likes: PropTypes.number.isRequired,
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+  }),
 };

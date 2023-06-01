@@ -1,5 +1,4 @@
 import React from "react";
-import "./Stats.style.css";
 import PropTypes from "prop-types";
 
 export default function Stats({ stats }) {
@@ -28,5 +27,9 @@ export default function Stats({ stats }) {
 }
 
 Stats.propTypes = {
-  stats: PropTypes.objectOf(PropTypes.number.isRequired),
+  stats: PropTypes.shape({
+    likes: PropTypes.number.isRequired,
+    followers: PropTypes.number.isRequired,
+    views: PropTypes.number.isRequired,
+  }),
 };
